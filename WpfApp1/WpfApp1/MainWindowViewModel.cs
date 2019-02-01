@@ -11,8 +11,10 @@ namespace WpfApp1
 
             //Default tab
             Tabs.Add( new TraceViewerViewModel(5) );
+            Tabs.Add( new TraceViewerViewModel(10) );
+            Tabs.Add( new TraceViewerViewModel(15) );
 
-            AddTabCommand = new RelayCommand<object>( obj => Tabs.Add( new TraceViewerViewModel(10) ) );
+            AddTabCommand = new RelayCommand<object>( obj => Tabs.Add( new TraceViewerViewModel(20) ) );
         }
 
         public RelayCommand<object> AddTabCommand { get; }
